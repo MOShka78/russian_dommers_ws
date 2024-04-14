@@ -1,3 +1,0 @@
-/home/vadim/workspace/russian_dommers_ws/build/CMakeFiles/hello-world.dir
-/home/vadim/workspace/russian_dommers_ws/build/CMakeFiles/edit_cache.dir
-/home/vadim/workspace/russian_dommers_ws/build/CMakeFiles/rebuild_cache.dir
