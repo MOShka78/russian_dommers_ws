@@ -1,5 +1,5 @@
 CMakeFiles/hello-world.dir/src/main.cpp.o: \
- /home/vadim/workspace/homework/src/lab1/src/main.cpp \
+ /home/vadim/workspace/russian_dommers_ws/lab1/src/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

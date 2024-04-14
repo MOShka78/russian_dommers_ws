@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vadim/workspace/homework/src/lab1
+CMAKE_SOURCE_DIR = /home/vadim/workspace/russian_dommers_ws/lab1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vadim/workspace/homework/build
+CMAKE_BINARY_DIR = /home/vadim/workspace/russian_dommers_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vadim/workspace/homework/build/CMakeFiles /home/vadim/workspace/homework/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vadim/workspace/russian_dommers_ws/build/CMakeFiles /home/vadim/workspace/russian_dommers_ws/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vadim/workspace/homework/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vadim/workspace/russian_dommers_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
