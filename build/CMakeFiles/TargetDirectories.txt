@@ -1,0 +1,3 @@
+/home/vadim/workspace/homework/build/CMakeFiles/hello-world.dir
+/home/vadim/workspace/homework/build/CMakeFiles/edit_cache.dir
+/home/vadim/workspace/homework/build/CMakeFiles/rebuild_cache.dir
