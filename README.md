@@ -1,9 +1,5 @@
 # russian_dommers_ws
 
-```
- cmake pkg_name/ -Bbuild -DCMAKE_BUILD_TYPE=Release
-```
-make in /build
 
 ## add_two_numbers
 Вам даны два непустых связанных списка, представляющих два неотрицательных целых числа. Цифры хранятся в обратном порядке, и каждый из их узлов содержит одну цифру. Сложите два числа и верните сумму в виде связанного списка.
@@ -50,3 +46,10 @@ public:
     }
 };
  ```
+
+### build and run test
+```
+cmake -S. -Bbuild add_two_numbers/
+cmake --build build/
+ctest --test-dir build/
+```
