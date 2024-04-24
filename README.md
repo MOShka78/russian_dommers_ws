@@ -51,5 +51,5 @@ public:
 ```
 cmake -S. -Bbuild add_two_numbers/
 cmake --build build/
-ctest --test-dir build/
+ctest --test-dir build/ -V
 ```
