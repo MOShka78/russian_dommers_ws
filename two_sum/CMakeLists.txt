@@ -13,7 +13,7 @@ include_directories(include)
 
 
 enable_testing()
-add_executable(${PROJECT_NAME}_test ${ADD_TWO_TEST_CPP})
+add_executable(${PROJECT_NAME}_test ${TWO_SUM_TEST_CPP})
 target_link_libraries(${PROJECT_NAME}_test gtest ${PROJECT_NAME} )
 add_test(
   NAME ${PROJECT_NAME}_test
