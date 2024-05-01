@@ -53,3 +53,50 @@ cmake -S. -Bbuild add_two_numbers/
 cmake --build build/
 ctest --test-dir build/ -V
 ```
+
+## two_sum
+
+Учитывая массив целых чисел `nums` и integer `target`, верните индексы двух чисел так, чтобы их сумма составляла `target`.
+
+Вы можете предположить, что каждый вход будет иметь ровно одно решение, и вы не можете использовать один и тот же элемент дважды.
+
+Вы можете вернуть ответ в любом порядке.
+
+Example 1:
+```
+Input: nums = [2,7,11,15], target = 9
+Output: [0,1]
+Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
+```
+Example 2:
+```
+Input: nums = [3,2,4], target = 6
+Output: [1,2]
+```
+Example 3:
+```
+Input: nums = [3,3], target = 6
+Output: [0,1]
+```
+Constraints:
+
+   - 2 <= nums.length <= 10^4
+   - -10^9 <= nums[i] <= 10^9
+   - -10^9 <= target <= 10^9
+   - Only one valid answer exists.
+
+``` cpp
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        
+    }
+};
+```
+
+### build and run test
+```
+cmake -S. -Bbuild two_sum/
+cmake --build build/
+ctest --test-dir build/ -V
+```

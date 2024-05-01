@@ -1,19 +1,19 @@
 # set minimum cmake version
 cmake_minimum_required(VERSION 3.5)
-project(add_two_numbers LANGUAGES CXX)
+project(two_sum LANGUAGES CXX)
 
-set(ADD_TWO_TEST_CPP
+set(TWO_SUM_TEST_CPP
     test/main.cpp
 )
 
-add_library(${PROJECT_NAME} src/add_two_numbers.cpp)
+add_library(${PROJECT_NAME} src/two_sum.cpp)
 include_directories(include)
 
 
 
 
 enable_testing()
-add_executable(${PROJECT_NAME}_test ${ADD_TWO_TEST_CPP})
+add_executable(${PROJECT_NAME}_test ${TWO_SUM_TEST_CPP})
 target_link_libraries(${PROJECT_NAME}_test gtest ${PROJECT_NAME} )
 add_test(
   NAME ${PROJECT_NAME}_test
