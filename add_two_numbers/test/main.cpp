@@ -118,6 +118,37 @@ TEST(Test_Solution, min_first_sizes) {
 
   ASSERT_EQ(result_value, real_value);
 }
+
+TEST(Test_Solution, zero) {
+  auto test_list_node_ = std::make_shared<TestCustomSolution>(0, 20);
+  auto add_two_numbers_ = std::make_shared<Solution>();
+
+  ListNode* value_list_node =
+      add_two_numbers_->addTwoNumbers(test_list_node_->getListNodeFirst(),
+                                      test_list_node_->getListNodeSecond());
+
+  std::vector<int> result_value =
+      test_list_node_->getListNodeVectorValue(value_list_node);
+  std::vector<int> real_value = test_list_node_->getSumValue();
+
+  ASSERT_EQ(result_value, real_value);
+}
+
+TEST(Test_Solution, big_size) {
+  auto test_list_node_ = std::make_shared<TestCustomSolution>(99, 444);
+  auto add_two_numbers_ = std::make_shared<Solution>();
+
+  ListNode* value_list_node =
+      add_two_numbers_->addTwoNumbers(test_list_node_->getListNodeFirst(),
+                                      test_list_node_->getListNodeSecond());
+
+  std::vector<int> result_value =
+      test_list_node_->getListNodeVectorValue(value_list_node);
+  std::vector<int> real_value = test_list_node_->getSumValue();
+
+  ASSERT_EQ(result_value, real_value);
+}
+
 int main(int argc, char** argv) {
   ::testing::InitGoogleTest(&argc, argv);
 
