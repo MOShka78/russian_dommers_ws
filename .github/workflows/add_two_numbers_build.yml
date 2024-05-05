@@ -2,10 +2,12 @@ name: Add two numbers build and test
 on:  
   push:
     branches:
-      - [ "main", "develop" ]
-  pull_request:
+      - 'main'
+      - 'develop'
+  pull_request_target:
     branches:
-      - [ "main", "develop" ]
+      - 'main'
+      - 'develop'
 jobs:
   build_and_test:
     runs-on: ubuntu-latest
