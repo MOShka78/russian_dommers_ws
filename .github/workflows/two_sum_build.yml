@@ -8,13 +8,17 @@ on:
       branches:
         - develop
 jobs:
- Explore-GitHub-Actions:
+  build:
     runs-on: ubuntu-latest
     steps:
+      - run: sudo apt install libgtest-dev
       - uses: actions/checkout@v4
       - name: create build dir
         run: cmake -S. -Bbuild two_sum/
       - name: build
         run: cmake --build build/
+  test:
+    runs-on: ubuntu-latest
+    steps:        
       - name: test
         run: ctest --test-dir build/ -V
