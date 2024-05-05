@@ -16,9 +16,6 @@ jobs:
       - name: create build dir
         run: cmake -S. -Bbuild two_sum/
       - name: build
-        run: cmake --build build/
-  test:
-    runs-on: ubuntu-latest
-    steps:        
+        run: cmake --build build/       
       - name: test
         run: ctest --test-dir build/ -V

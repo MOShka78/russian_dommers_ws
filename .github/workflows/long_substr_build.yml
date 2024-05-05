@@ -17,8 +17,5 @@ jobs:
         run: cmake -S. -Bbuild long_substr/
       - name: build
         run: cmake --build build/
-  test:
-    runs-on: ubuntu-latest
-    steps:
       - name: test
         run: ctest --test-dir build/ -V

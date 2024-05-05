@@ -17,8 +17,5 @@ jobs:
         run: cmake -S. -Bbuild add_two_numbers/
       - name: build
         run: cmake --build build/
-  test:
-    runs-on: ubuntu-latest
-    steps:
       - name: test
         run: ctest --test-dir build/ -V
