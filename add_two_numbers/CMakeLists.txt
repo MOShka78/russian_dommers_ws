@@ -1,4 +1,3 @@
-# set minimum cmake version
 cmake_minimum_required(VERSION 3.5)
 project(add_two_numbers LANGUAGES CXX)
 
