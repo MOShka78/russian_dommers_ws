@@ -3,12 +3,12 @@ on:
   workflow_dispatch:
     push:
       branches:
-        - develop
+        - [ "main", "develop" ]
     pull_request:
       branches:
-        - develop
+        - [ "main", "develop" ]
 jobs:
- Explore-GitHub-Actions:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -16,5 +16,7 @@ jobs:
         run: cmake -S. -Bbuild add_two_numbers/
       - name: build
         run: cmake --build build/
+  test:
+    steps:
       - name: test
         run: ctest --test-dir build/ -V
