@@ -3,10 +3,10 @@ on:
   workflow_dispatch:
     push:
       branches:
-        - develop
+        - [ "main", "develop" ]
     pull_request:
       branches:
-        - develop
+        - [ "main", "develop" ]
 jobs:
   build_and_test:
     runs-on: ubuntu-latest
