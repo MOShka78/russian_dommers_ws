@@ -1,12 +1,11 @@
 name: Add two numbers build and test
 on:  
-  workflow_dispatch:
-    push:
-      branches:
-        - [ "main", "develop" ]
-    pull_request:
-      branches:
-        - [ "main", "develop" ]
+  push:
+    branches:
+      - [ "main", "develop" ]
+  pull_request:
+    branches:
+      - [ "main", "develop" ]
 jobs:
   build_and_test:
     runs-on: ubuntu-latest
