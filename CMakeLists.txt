@@ -8,6 +8,7 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
+enable_testing()
 add_subdirectory(add_two_numbers)
 add_subdirectory(two_sum)
 add_subdirectory(long_substr)
