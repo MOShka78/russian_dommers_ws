@@ -1,4 +1,4 @@
-name: Long substr build and test
+name: all package build and test
 on:  
   push:
     branches:
@@ -15,8 +15,8 @@ jobs:
       - run: sudo apt install libgtest-dev
       - uses: actions/checkout@v4
       - name: create build dir
-        run: cmake -S. -Bbuild long_substr/
+        run: cmake -S. -Bbuild .
       - name: build
         run: cmake --build build/
       - name: test
-        run: ctest --test-dir build/ -V
+        run: ctest --test-dir build/ -V 

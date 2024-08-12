@@ -11,5 +11,10 @@ endif()
 add_subdirectory(add_two_numbers)
 add_subdirectory(two_sum)
 add_subdirectory(long_substr)
+add_subdirectory(long_palindromic)
+add_subdirectory(median_two_sort)
+add_subdirectory(string_to_integer)
+add_subdirectory(reverse_int)
+
 
 

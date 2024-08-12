@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(median_two_sort LANGUAGES CXX)
+project(reverse_int LANGUAGES CXX)
 
 set(TWO_SUM_TEST_CPP
     test/main.cpp
