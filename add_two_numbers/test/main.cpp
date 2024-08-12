@@ -40,7 +40,7 @@ class TestCustomSolution {
                        std::vector<int>& min_value_vector) {
     int last_upgrade_value = 0;
 
-    for (int cur = 0; cur < max_value_vector.size(); cur++) {
+    for (size_t cur = 0; cur < max_value_vector.size(); cur++) {
       int sum_value = last_upgrade_value;
       if (min_value_vector.size() < max_value_vector.size()) {
         sum_value += max_value_vector[cur] + min_value_vector[cur];

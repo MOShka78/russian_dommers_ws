@@ -5,13 +5,13 @@ std::string Solution::longestPalindrome(std::string s) {
   std::reverse(reverse_s.begin(), reverse_s.end());
   std::string last_p = "";
   std::vector<std::string> palindromic_list;
-  for (int cur = 0; cur < s.size(); cur++) {
+  for (size_t cur = 0; cur < s.size(); cur++) {
     if (s[cur] == last_p[last_p.size() - 1]) {
       int k = 1;
-      for (int j = cur; j < last_p.size(); j++) {
-        if (last_p[last_p.size() - k] == s[j]){
-          palindromic_list.
-        } 
+      for (size_t j = cur; j < last_p.size(); j++) {
+        if (last_p[last_p.size() - k] == s[j]) {
+          // palindromic_list
+        }
       }
     } else {
       last_p += s[cur];
