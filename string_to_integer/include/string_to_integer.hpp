@@ -1,10 +1,12 @@
 #pragma once
 
+#include <math.h>
+
 #include <algorithm>
 #include <iostream>
-#include <memory>
+#include <map>
 #include <vector>
 class Solution {
  public:
-  std::vector<int> twoSum(std::vector<int>& nums, int target);
+  int myAtoi(std::string s);
 };

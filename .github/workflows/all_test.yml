@@ -1,0 +1,22 @@
+name: all package build and test
+on:  
+  push:
+    branches:
+      - 'main'
+      - 'develop'
+  pull_request:
+    branches:
+      - 'main'
+      - 'develop'
+jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sudo apt install libgtest-dev
+      - uses: actions/checkout@v4
+      - name: create build dir
+        run: cmake -S. -Bbuild .
+      - name: build
+        run: cmake --build build/
+      - name: test
+        run: ctest --test-dir build/ --progress -V
