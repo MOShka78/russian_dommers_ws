@@ -27,8 +27,11 @@ int Solution::myAtoi(std::string s) {
     if (number_list.find(current_symbol) == number_list.end()) {
       return output * K_MINUS;
     }
-    if (output > (INT32_MAX / 10)) {
-      return (2147483648) * K_MINUS;
+    if ((output * K_MINUS) > (INT32_MAX / 10)) {
+      return INT32_MAX * K_MINUS;
+    }
+    if ((output * K_MINUS) < (INT32_MIN / 10)) {
+      return INT32_MIN * K_MINUS;
     }
     output = output * 10 + number_list[current_symbol];
     init = true;

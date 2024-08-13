@@ -26,18 +26,6 @@ TEST(Test_Solution, Case_2) {
   ASSERT_EQ(output, output_find);
 }
 
-TEST(Test_Solution, time_check) {
-  auto solution = std::make_shared<Solution>();
-
-  std::vector<int> nums1 = {1, 2, 5, 6};
-  std::vector<int> nums2 = {3, 4};
-
-  double output = solution->findMedianSortedArrays(nums1, nums2);
-
-  double output_find = 2.5;
-  ASSERT_EQ(output, output_find);
-}
-
 int main(int argc, char** argv) {
   ::testing::InitGoogleTest(&argc, argv);
 
