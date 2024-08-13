@@ -7,7 +7,7 @@ TEST(Test_Solution, Case_1) {
 
   int s = 121;
 
-  bool output = solution->longestPalindrome(s);
+  bool output = solution->isPalindrome(s);
 
   bool output_find = true;
   ASSERT_EQ(output, output_find);
@@ -18,7 +18,7 @@ TEST(Test_Solution, Case_2) {
 
   int s = -121;
 
-  bool output = solution->longestPalindrome(s);
+  bool output = solution->isPalindrome(s);
 
   bool output_find = false;
   ASSERT_EQ(output, output_find);
@@ -29,7 +29,7 @@ TEST(Test_Solution, Case_3) {
 
   int s = 10;
 
-  bool output = solution->longestPalindrome(s);
+  bool output = solution->isPalindrome(s);
 
   bool output_find = false;
   ASSERT_EQ(output, output_find);
