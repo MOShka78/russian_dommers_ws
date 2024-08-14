@@ -15,7 +15,7 @@ jobs:
       - run: sudo apt install libgtest-dev
       - uses: actions/checkout@v4
       - name: create build dir
-        run: cmake -S. -Bbuild .
+        run: cmake -Bbuild .
       - name: build
         run: cmake --build build/
       - name: test

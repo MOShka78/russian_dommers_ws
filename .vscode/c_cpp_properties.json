@@ -4,7 +4,10 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/opt/ros/humble/include/**"
+                "/opt/ros/humble/include/**",
+                "${workspaceFolder}/palindromic_number/include",
+                "${workspaceFolder}/container_most_water/include",
+                "${workspaceFolder}/int_to_roman/include"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
